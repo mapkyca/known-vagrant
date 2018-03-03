@@ -2,8 +2,9 @@
 - name: Install MySQL
   action: apt pkg={{item}} state=installed
   with_items:
-    - mysql-server
-    - php5-mysql
+    - mariadb-server
+    - php7.0-mysql
+    - php7.0-pdo
     - python-mysqldb
 
 - name: Get list of hosts for the anonymous user
