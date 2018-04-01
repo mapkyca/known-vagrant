@@ -2,7 +2,7 @@
 - name: Add known config.ini
   template:
     src: "config.ini"
-    dest: "/home/vagrant/Known/config.ini"
+    dest: "/home/vagrant/Known/configuration/config.ini"
 
 # - name: Add known htaccess
 #   template:
@@ -13,4 +13,4 @@
   file: path=/var/www/Known/Uploads mode=0777
 
 - name: Import database schema
-  mysql_db: name=known state=import target=/var/www/Known/schemas/mysql/mysql.sql
+  mysql_db: name=known state=import target=/var/www/Known/warmup/schemas/mysql/mysql.sql
