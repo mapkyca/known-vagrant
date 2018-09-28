@@ -10,6 +10,9 @@
     - ntp
     - htop
     - python
+    - aptitude
+    - phpunit
+    - libxml2-utils
 
 - name: Configure ntp file
   template: src=ntp.conf.j2 dest=/etc/ntp.conf
