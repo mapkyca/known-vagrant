@@ -12,6 +12,7 @@
     - python
     - aptitude
     - phpunit
+    - php-codesniffer
     - libxml2-utils
     - curl
 
