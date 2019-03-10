@@ -2,14 +2,14 @@
 - name: Install PHP
   action: apt pkg={{item}} state=installed
   with_items:
-    - php7.2
-    - libapache2-mod-php7.2
-    - php7.2-curl
-    - php7.2-gd
-    - php7.2-json
-    - php7.2-xmlrpc
-    - php7.2-mbstring
-    - php7.2-dom
-    - php7.2-exif
-    - php7.2-simplexml
+    - php7.3
+    - libapache2-mod-php7.3
+    - php7.3-curl
+    - php7.3-gd
+    - php7.3-json
+    - php7.3-xmlrpc
+    - php7.3-mbstring
+    - php7.3-dom
+    - php7.3-exif
+    - php7.3-simplexml
   notify: restart apache

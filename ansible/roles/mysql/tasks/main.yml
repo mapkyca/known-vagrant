@@ -3,8 +3,8 @@
   action: apt pkg={{item}} state=installed
   with_items:
     - mariadb-server
-    - php7.2-mysql
-    - php7.2-pdo
+    - php7.3-mysql
+    - php7.3-pdo
     - python-mysqldb
 
 - name: Get list of hosts for the anonymous user
