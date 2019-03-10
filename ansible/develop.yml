@@ -5,9 +5,15 @@
   pre_tasks:
     - name: 'update packages'
       raw: sudo apt-get update
+    - name: 'Adding software properties'
+      raw: sudo apt-get -y install software-properties-common
+    - name: 'Adding third party repo'
+      raw: sudo add-apt-repository -y ppa:ondrej/php
+    - name: 'update packages again'
+      raw: sudo apt-get update
     - name: 'install python2'
       raw: sudo apt-get -y install python-simplejson
-
+    
   roles:
     - common
     - apache
