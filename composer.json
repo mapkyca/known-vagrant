@@ -1,0 +1,18 @@
+{
+    "name": "mapkyca/known-vagrant",
+    "description": "Vagrant wrapper for the Known project.",
+    "type": "project",
+    "version": "1.2.0",
+    "homepage" : "https://github.com/mapkyca/known-vagrant",
+    "license": "GPL-2.0-only",
+    "readme" : "README.md",
+    "keywords" : ["blogging", "publishing", "social", "indieweb", "community", "vagrant"],
+    "authors": [
+	{
+	    "name": "Marcus Povey",
+	    "email": "marcus@marcus-povey.co.uk",
+	    "homepage": "https://www.marcus-povey.co.uk",
+	    "role": "Developer"
+	}
+    ]
+}

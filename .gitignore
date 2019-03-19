@@ -2,3 +2,4 @@ Known
 .vagrant
 *.log
 nbproject/
+composer.lock
