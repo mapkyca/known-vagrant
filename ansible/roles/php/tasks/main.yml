@@ -12,4 +12,8 @@
     - php7.2-dom
     - php7.2-exif
     - php7.2-simplexml
+    - zip
+    - unzip
+    - git
+    - composer
   notify: restart apache
