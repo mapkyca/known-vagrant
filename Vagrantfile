@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "withknown"
   config.vm.network :private_network, ip: "192.168.33.33"
 
-  config.vm.synced_folder "./Known", "/home/vagrant/Known"
+  config.vm.synced_folder "./Known", "/home/vagrant/Known", :group => "www-data", :mount_options => ['dmode=775','fmode=664']
 
   # Ansible provisioner.
   config.vm.provision "ansible" do |ansible|
