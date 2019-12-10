@@ -2,16 +2,16 @@
 - name: Install PHP
   action: apt pkg={{item}} state=installed
   with_items:
-    - php7.3
-    - libapache2-mod-php7.3
-    - php7.3-curl
-    - php7.3-gd
-    - php7.3-json
-    - php7.3-xmlrpc
-    - php7.3-mbstring
-    - php7.3-dom
-    - php7.3-exif
-    - php7.3-simplexml
+    - php{{ php_version }}
+    - libapache2-mod-php{{ php_version }}
+    - php{{ php_version }}-curl
+    - php{{ php_version }}-gd
+    - php{{ php_version }}-json
+    - php{{ php_version }}-xmlrpc
+    - php{{ php_version }}-mbstring
+    - php{{ php_version }}-dom
+    - php{{ php_version }}-exif
+    - php{{ php_version }}-simplexml
     - zip
     - unzip
     - git

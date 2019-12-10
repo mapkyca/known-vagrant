@@ -2,6 +2,8 @@
   hosts: all
   sudo: true
   gather_facts: no
+  vars_files:
+    - vars/general.yml
   pre_tasks:
     - name: 'update packages'
       raw: sudo apt-get update
